@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x264.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x264_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x264cli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cabac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\dct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\macroblock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\mc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\opencl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\osdep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pixel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\predict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\threadpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\win32thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\analyse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\macroblock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\me.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\ratecontrol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extras\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="output\output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\filters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="output\flv_bytestream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="output\matroska_ebml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\video\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\video\video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="example.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="x264.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\bitstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cabac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\dct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\deblock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\macroblock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\mc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\mvpred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\osdep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pixel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\predict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\rectangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\threadpool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\vlc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\win32thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\analyse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\cavlc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\enc_cabac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\enc_macroblock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\enc_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\lookahead.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\me.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\ratecontrol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\rdo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoder\slicetype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extras\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\filters.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\timecode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\y4m.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output\flv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output\flv_bytestream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output\matroska.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output\matroska_ebml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\crop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\depth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\fix_vfr_pts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\internal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\resize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\select_every.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\source.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\video\video.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output\output_raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input\input_raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

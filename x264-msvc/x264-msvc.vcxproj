@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62DCB60A-4863-4F92-9883-13A1FBF636AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>x264msvc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;./extras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="common\bitstream.h" />
+    <ClInclude Include="common\cabac.h" />
+    <ClInclude Include="common\common.h" />
+    <ClInclude Include="common\cpu.h" />
+    <ClInclude Include="common\dct.h" />
+    <ClInclude Include="common\frame.h" />
+    <ClInclude Include="common\macroblock.h" />
+    <ClInclude Include="common\mc.h" />
+    <ClInclude Include="common\opencl.h" />
+    <ClInclude Include="common\osdep.h" />
+    <ClInclude Include="common\pixel.h" />
+    <ClInclude Include="common\predict.h" />
+    <ClInclude Include="common\quant.h" />
+    <ClInclude Include="common\rectangle.h" />
+    <ClInclude Include="common\set.h" />
+    <ClInclude Include="common\threadpool.h" />
+    <ClInclude Include="common\win32thread.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="encoder\analyse.h" />
+    <ClInclude Include="encoder\macroblock.h" />
+    <ClInclude Include="encoder\me.h" />
+    <ClInclude Include="encoder\ratecontrol.h" />
+    <ClInclude Include="encoder\set.h" />
+    <ClInclude Include="extras\getopt.h" />
+    <ClInclude Include="filters\filters.h" />
+    <ClInclude Include="filters\video\internal.h" />
+    <ClInclude Include="filters\video\video.h" />
+    <ClInclude Include="input\input.h" />
+    <ClInclude Include="output\flv_bytestream.h" />
+    <ClInclude Include="output\matroska_ebml.h" />
+    <ClInclude Include="output\output.h" />
+    <ClInclude Include="strings.h" />
+    <ClInclude Include="x264.h" />
+    <ClInclude Include="x264cli.h" />
+    <ClInclude Include="x264_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\bitstream.c" />
+    <ClCompile Include="common\cabac.c" />
+    <ClCompile Include="common\common.c" />
+    <ClCompile Include="common\cpu.c" />
+    <ClCompile Include="common\dct.c" />
+    <ClCompile Include="common\deblock.c" />
+    <ClCompile Include="common\frame.c" />
+    <ClCompile Include="common\macroblock.c" />
+    <ClCompile Include="common\mc.c" />
+    <ClCompile Include="common\mvpred.c" />
+    <ClCompile Include="common\osdep.c" />
+    <ClCompile Include="common\pixel.c" />
+    <ClCompile Include="common\predict.c" />
+    <ClCompile Include="common\quant.c" />
+    <ClCompile Include="common\rectangle.c" />
+    <ClCompile Include="common\set.c" />
+    <ClCompile Include="common\threadpool.c" />
+    <ClCompile Include="common\vlc.c" />
+    <ClCompile Include="common\win32thread.c" />
+    <ClCompile Include="encoder\analyse.c" />
+    <ClCompile Include="encoder\cavlc.c" />
+    <ClCompile Include="encoder\encoder.c" />
+    <ClCompile Include="encoder\enc_cabac.c" />
+    <ClCompile Include="encoder\enc_macroblock.c" />
+    <ClCompile Include="encoder\enc_set.c" />
+    <ClCompile Include="encoder\lookahead.c" />
+    <ClCompile Include="encoder\me.c" />
+    <ClCompile Include="encoder\ratecontrol.c" />
+    <ClCompile Include="encoder\rdo.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="encoder\slicetype.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="example.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="extras\getopt.c" />
+    <ClCompile Include="filters\filters.c" />
+    <ClCompile Include="filters\video\cache.c" />
+    <ClCompile Include="filters\video\crop.c" />
+    <ClCompile Include="filters\video\depth.c" />
+    <ClCompile Include="filters\video\fix_vfr_pts.c" />
+    <ClCompile Include="filters\video\internal.c" />
+    <ClCompile Include="filters\video\resize.c" />
+    <ClCompile Include="filters\video\select_every.c" />
+    <ClCompile Include="filters\video\source.c" />
+    <ClCompile Include="filters\video\video.c" />
+    <ClCompile Include="input\input.c" />
+    <ClCompile Include="input\input_raw.c" />
+    <ClCompile Include="input\thread.c" />
+    <ClCompile Include="input\timecode.c" />
+    <ClCompile Include="input\y4m.c" />
+    <ClCompile Include="output\flv.c" />
+    <ClCompile Include="output\flv_bytestream.c" />
+    <ClCompile Include="output\matroska.c" />
+    <ClCompile Include="output\matroska_ebml.c" />
+    <ClCompile Include="output\output_raw.c" />
+    <ClCompile Include="x264.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
