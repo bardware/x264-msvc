@@ -7,7 +7,7 @@ Now, x264-msvc is based on x264-snapshot-20141218-2245, and is built successfull
 
 
 ## Why x264-msvc?
-* For getting rid of dependency of MSYS/MinGW when you debugging it on Windows Platform;
+* For getting rid of dependency of MSYS/MinGW when you build it on Windows Platform;
 * For studing H.264 and x264 in deep by debugging it in Visual Studio;
 
 
